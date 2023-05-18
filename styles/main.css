@@ -1,0 +1,74 @@
+* {
+    margin 0;
+    box-sizing: border-box;
+    padding: 0;
+}
+
+/* grid setup */
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+    'nav nav'
+    'content tips';
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 10fr;
+}
+
+header,
+main,
+aside {
+    background-color: steelblue;
+    color: white;
+    padding: 10px;
+    border: skyblue 1px solid;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: content;
+}
+
+.tips {
+    grid-area: tips;
+}
+
+
+
+/* nav */
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+li {
+    margin: 20px;
+    font-size: 25px;
+    list-style: none;
+}
+
+
+
+/* images */
+
+img {
+    width: 200px;
+    border: darkblue 5px solid;
+    border-radius: 20px;
+}
+
+.fishobjects {
+    display: flex;
+    justify-content: space-around;
+}
