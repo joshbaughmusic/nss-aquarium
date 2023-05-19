@@ -1,7 +1,16 @@
 * {
-    margin 0;
+    margin: 0px;
     box-sizing: border-box;
     padding: 0;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 30px;
+    margin: 20px 10px;
 }
 
 /* grid setup */
@@ -22,7 +31,6 @@ aside {
     background-color: steelblue;
     color: white;
     padding: 10px;
-    border: skyblue 1px solid;
 }
 
 .nav {
@@ -45,6 +53,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: rgb(62, 62, 172);
 }
 
 ul {
@@ -63,12 +72,76 @@ li {
 /* images */
 
 img {
-    width: 200px;
-    border: darkblue 5px solid;
+    max-width: 200px;
+    border: rgb(62, 62, 172) 5px solid;
     border-radius: 20px;
+    height: 150px
 }
 
-.fishobjects {
+/* .fishobjects {
     display: flex;
     justify-content: space-around;
+} */
+
+.fishList {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+
+/* quotes */
+
+.section__quotes {
+    margin-top: 30px;
+}
+
+.quote-blocks {
+ display: flex;
+ justify-content: space-evenly;
+}
+
+.quote-text {
+    max-width: 300px;
+    margin: 0px 20px;
+    font-style: italic;
+    background-color: rgb(62, 62, 172);
+    padding: 20px;
+    border-radius: 20px;
+    border: cornflowerblue 3px solid;
+}
+
+
+/* harvest locations */
+
+.section__harvesting {
+    margin-top: 30px;
+    
+}
+
+.locationsList {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+}
+
+.location_card {
+    background-color: rgb(62, 62, 172);
+    padding: 20px;
+    border-radius: 20px;
+    border: cornflowerblue 3px solid;
+}
+
+/* tips section */
+
+.tips {
+    border-left:  rgb(62, 62, 172) solid 5px;
+}
+
+.tip-text {
+    background-color: rgb(62, 62, 172);
+    padding: 20px;
+    border-radius: 20px;
+    border: cornflowerblue 3px solid;
 }
